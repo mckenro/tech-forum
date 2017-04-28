@@ -1,1 +1,12 @@
-{{yield}}
+<h4>{{question.ask}}</h4>
+<p class="notes">{{question.notes}}</p>
+<p class="user">{{question.user}}</p>
+<h2>Answers to {{question.user}}'s Question</h2>
+
+  {{#each question.answers as |answer|}}
+    {{answer-tile answer=answer destroyAnswer="destroyAnswer"}}
+  {{/each}}
+
+<div class = "form-group">
+  <button class="btn btn-danger" {{action 'delete' question}}>Delete Question</button>
+</div>

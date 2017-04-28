@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: 'tech-forum',
+    modulePrefix: 'super-questions',
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
@@ -11,14 +11,14 @@ module.exports = function(environment) {
         // Here you can enable experimental features on an ember canary build
         // e.g. 'with-controller': true
       },
+
       EXTEND_PROTOTYPES: {
         // Prevent Ember Data from overriding Date.parse.
         Date: false
       }
     },
 
-  // Initialize Firebase
-  firebase: {
+    firebase: {
     apiKey: "AIzaSyAUp_FEHrb3zTuM03z5pQWpJy333J305I4",
     authDomain: "tech-forum-6f911.firebaseapp.com",
     databaseURL: "https://tech-forum-6f911.firebaseio.com",

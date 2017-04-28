@@ -1,7 +1,7 @@
-<h2>{{model.owner}}'s {{model.type}} details</h2>
+<h2>{{model.user}}'s {{model.ask}} details</h2>
 
-{{update-rental rental=model update="update"}}
+{{update-question question=model update="update"}}
 
-{{rental-detail rental=model destroyRental="destroyRental" destroyReview="destroyReview"}}
+{{question-detail question=model destroyQuestion="destroyQuestion" destroyAnswer="destroyAnswer"}}
 
-{{new-review saveReview="saveReview" rental=model}}
+{{new-answer saveAnswer="saveAnswer" question=model}}

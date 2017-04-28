@@ -1,6 +1,11 @@
-<h1>Tech Forum</h1>
-<div class="question">
+<h1>tech-forum</h1>
+
+<p>Get answers to all your tech questions!</p>
+
+  <h2>Current Questions</h2>
+
   {{#each model.questions as |question|}}
     {{question-tile question=question}}
   {{/each}}
-</div>
+
+  {{new-question saveQuestion="saveQuestion"}}

@@ -1,0 +1,32 @@
+{{#if addNewQuestion}}
+
+<div class="panel panel-success">
+  <div class="panel-heading">
+    <h2 class="panel-title">New Question</h2>
+  </div>
+  <div class="panel-body">
+      <form>
+        <div class="form-group">
+          <label for="user">Your Name</label>
+          {{input class="form-control" value=user id="user"}}
+        </div>
+
+        <div class="form-group">
+          <label for="ask">Your Question</label>
+          {{input class="form-control" value=ask id="ask"}}
+        </div>
+
+        <div class="form-group">
+          <label for="notes">Share Details for your Question</label>
+          {{input class="form-control" value=notes id="notes"}}
+        </div>
+
+        <button class="btn btn-success" {{action 'saveQuestion'}}>Save</button>
+      </form>
+    </div>
+</div>
+{{else}}
+<div class="form-group">
+  <button class="btn btn-success" {{action 'questionFormShow'}}>Add New Question</button>
+</div>
+{{/if}}
