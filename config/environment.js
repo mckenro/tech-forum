@@ -17,6 +17,14 @@ module.exports = function(environment) {
       }
     },
 
+  // Initialize Firebase
+  firebase: {
+    apiKey: "AIzaSyAUp_FEHrb3zTuM03z5pQWpJy333J305I4",
+    authDomain: "tech-forum-6f911.firebaseapp.com",
+    databaseURL: "https://tech-forum-6f911.firebaseio.com",
+    storageBucket: "tech-forum-6f911.appspot.com",
+  },
+
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
