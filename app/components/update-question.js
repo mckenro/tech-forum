@@ -8,11 +8,9 @@ export default Ember.Component.extend({
     },
     update(question) {
       var params = {
-        owner: this.get('owner'),
-        city: this.get('city'),
-        type: this.get('type'),
-        image: this.get('image'),
-        bedrooms: this.get('bedrooms'),
+        user: this.get('user'),
+        notes: this.get('notes'),
+        ask: this.get('ask')
       };
       this.set('updateQuestionForm', false);
       this.sendAction('update', question, params);

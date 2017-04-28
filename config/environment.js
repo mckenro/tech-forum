@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: 'super-questions',
+    modulePrefix: 'tech-site',
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
@@ -11,7 +11,6 @@ module.exports = function(environment) {
         // Here you can enable experimental features on an ember canary build
         // e.g. 'with-controller': true
       },
-
       EXTEND_PROTOTYPES: {
         // Prevent Ember Data from overriding Date.parse.
         Date: false
@@ -19,11 +18,11 @@ module.exports = function(environment) {
     },
 
     firebase: {
-    apiKey: "AIzaSyAUp_FEHrb3zTuM03z5pQWpJy333J305I4",
-    authDomain: "tech-forum-6f911.firebaseapp.com",
-    databaseURL: "https://tech-forum-6f911.firebaseio.com",
-    storageBucket: "tech-forum-6f911.appspot.com",
-  },
+      apiKey: 'AIzaSyAUp_FEHrb3zTuM03z5pQWpJy333J305I4',
+      authDomain: 'tech-forum-6f911.firebaseapp.com',
+      databaseURL: 'https://tech-forum-6f911.firebaseio.com',
+      storageBucket: 'tech-forum-6f911.appspot.com'
+    },
 
     APP: {
       // Here you can pass flags/options to your application instance

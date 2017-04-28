@@ -14,6 +14,7 @@ export default Ember.Route.extend({
       question.save();
       this.transitionTo('index');
     },
+
     destroyQuestion(question) {
       var answer_deletions = question.get('answers').map(function(answer) {
         return answer.destroyRecord();
@@ -23,16 +24,18 @@ export default Ember.Route.extend({
       });
       this.transitionTo('index');
     },
-    saveReview(params) {
-      var newReview = this.store.createRecord('answer', params);
+
+    saveAnswer(params) {
+      var newAnswer = this.store.createRecord('answer', params);
       var question = params.question;
-      question.get('answers').addObject(newReview);
-      newReview.save().then(function() {
+      question.get('answers').addObject(newAnswer);
+      newAnswer.save().then(function() {
         return question.save();
       });
       this.transitionTo('question', question);
     },
-    destroyReview(answer) {
+
+    destroyAnswer(answer) {
       answer.destroyRecord();
       this.transitionTo('index');
     }

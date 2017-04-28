@@ -1,12 +1,14 @@
-<h4>{{question.ask}}</h4>
-<p class="notes">{{question.notes}}</p>
-<p class="user">{{question.user}}</p>
-<h2>Answers to {{question.user}}'s Question</h2>
+<div class="container page-body">
+  <h2>{{question.ask}}</h2>
+  <p class="notes">{{question.notes}}</p>
+  <p class="user">{{question.user}}</p>
 
+  <div class = "form-group">
+    <button class="btn btn-danger" {{action 'delete' question}}>Delete Question</button>
+  </div>
+
+  <h4>Answers to {{question.user}}'s Question</h4>
   {{#each question.answers as |answer|}}
     {{answer-tile answer=answer destroyAnswer="destroyAnswer"}}
   {{/each}}
-
-<div class = "form-group">
-  <button class="btn btn-danger" {{action 'delete' question}}>Delete Question</button>
 </div>

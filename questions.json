@@ -1,0 +1,21 @@
+{ "questions": [{
+    "user": "Jim Smith",
+    "ask": "How do routes work in Ember?",
+    "notes": "I've tried doing x, y, and z but that did not work..."
+  }, {
+    "user": "Howie Stewart",
+    "ask": "What is javascript for?",
+    "notes": "It no workee with html"
+  }, {
+    "user": "Sally Sitwell",
+    "ask": "Does bootstrap 4 work yet",
+    "notes": "Been waiting for this new version!"
+  }],
+  "answers": [{
+    "author": "Bob Loblaw",
+    "response": "You need to use the new version, duh!"
+  }, {
+    "author": "Gob Bluth",
+    "response": "Have you tried using Aztec Tomb v2?"
+    }]
+}
