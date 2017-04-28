@@ -14,6 +14,11 @@ export default Ember.Component.extend({
       };
       this.set('updateQuestionForm', false);
       this.sendAction('update', question, params);
-    }
+    },
+    // saveQuestion(params) {
+    //   var newQuestion = this.store.createRecord('question', params);
+    //   newQuestion.save();
+    //   this.transitionTo('index');
+    // },
   }
 });
