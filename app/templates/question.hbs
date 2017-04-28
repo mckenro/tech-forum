@@ -1,8 +1,12 @@
 <div class="container page-body">
+  <div class="row">
+    <div class="col-md-7">
+      {{question-detail question=model destroyQuestion="destroyQuestion" destroyAnswer="destroyAnswer"}}
+    </div>
+    <div class="col-md-5 page-body">
+      {{update-question question=model update="update"}}
 
-  {{question-detail question=model destroyQuestion="destroyQuestion" destroyAnswer="destroyAnswer"}}
-
-  {{update-question question=model update="update"}}
-
-  {{new-answer saveAnswer="saveAnswer" question=model}}
+      {{new-answer saveAnswer="saveAnswer" question=model}}
+    </div>
+  </div>
 </div>

@@ -1,3 +1,14 @@
 .page-body {
   margin-top: 40px;
 }
+
+.answer {
+  background: #eee;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+}
+
+.answer-area {
+  margin-top: 40px;
+}
