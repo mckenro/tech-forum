@@ -2,12 +2,16 @@
   <h1>Tech-Forum</h1>
 
   <p>Get answers to all your tech questions!</p>
+<div class="row">
+  <div class="col-md-7">
+    <h2>Current Questions</h2>
 
-  <h2>Current Questions</h2>
-
-  {{#each model.questions as |question|}}
-    {{question-tile question=question}}
-  {{/each}}
-
-  {{new-question saveQuestion="saveQuestion"}}
+    {{#each model.questions as |question|}}
+      {{question-tile question=question}}
+    {{/each}}
+  </div>
+  <div class="col-md-5 spacer">
+    {{new-question saveQuestion="saveQuestion"}}
+  </div>
+</div>
 </div>

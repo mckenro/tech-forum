@@ -1,14 +1,24 @@
 .page-body {
-  margin-top: 40px;
+  margin-top: 50px;
 }
 
 .answer {
-  background: #eee;
+  background: #f5f5f5;
   padding: 12px;
   margin-bottom: 12px;
   border-radius: 6px;
+  border: 1px solid #e0e0e0;
 }
 
 .answer-area {
   margin-top: 40px;
+}
+
+.spacer {
+  margin-top: 60px;
+}
+
+.panel-heading h2{
+  font-size: 18px;
+  font-weight: 200;
 }
